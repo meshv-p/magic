@@ -1,0 +1,1271 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+body{
+    font-family: 'Baloo Bhaina 2', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+}
+*{
+    margin: 0;padding: 0;
+}
+nav{
+    background: #000; color: azure;
+}
+.cards {
+    display: flex; font-size: 20px;
+    justify-content: space-around;
+    /* Put a card in the next row when previous cards take all width */
+   
+}
+.card1{
+    margin-left: -50px;
+    padding: 5px 1px;
+    cursor: pointer;
+    min-width: 30px; 
+    /* border: 1px solid red; */
+}
+.card2{
+    margin-left: -95px;
+    /* border: 1px solid red; */
+    min-width: 10px;
+}
+.search{
+    width:782px;
+    /* margin-left: 600px; */
+    display: inline;
+}
+.search input {
+    margin-left: 150px;
+     height: 34px;
+    width: 595px;
+    border-radius: 5px;
+    outline: none;
+    background-color: lightskyblue;
+    /* opacity: .5; */
+}
+#sea{
+    font-size: 15px;
+}
+.icon i{
+    justify-content: space-around;
+    justify-items: center;
+    display: flex;
+    height: 40px;
+    margin: auto;
+    padding: auto;
+    padding: 3px;
+    font-size: 25px;
+    cursor: pointer;
+    /* background-color: white;
+    color: black; */
+}
+.nV{
+    width: 0;  /*150*/
+    height: 285px;
+    background-color: black;
+    color: white;
+    /* display: inline-block; */
+    border-radius: 10px;
+    transition: .8s;
+    display: none;
+}
+.nV{
+    display: block;
+}
+.nV ul li {
+    list-style: none;
+}
+.nV a{
+    color: white;
+    text-decoration: none;
+}
+.nV a:hover {
+    color: red;
+}
+.box{
+    display: none;
+    justify-content: center;
+    padding: 17px;
+}
+/* main div */
+.notes {   
+    /* border: 2px solid red; */
+    width: 100vw;
+    height: 100vh;
+    display: inline;
+}      /*  end */
+/* left div */
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-4px, 3px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  .left {
+      display: inline-block;
+      width: 130px;  
+      height: 140px;
+      position: absolute;  
+      border: 2px solid yellow;
+      border-radius: 10px;
+      left: 165px;
+      top: 97px;
+      text-align: center;
+      
+  }   /*  end */
+  .left ul li {
+      list-style: none;
+      text-align: left;
+      height: none;  /*defalut : none*/
+  }
+  ul{
+      margin-top: 7px ;
+  }
+  .left :hover{
+      list-style: circle;
+      color: maroon;
+  }
+  
+
+  .main{
+      display: flex;
+    justify-content: end;
+     /* border: 1px solid blue; */
+  }
+  .side{
+      /* border: 1px solid red; */
+      min-width: 280px;
+  }
+  
+/*=================================right div for list view========================  */
+/*=================================right div for list view========================  */
+.rightlist{
+    border: 1px solid green;
+   /* display: inline-block; */
+    width: 800px;
+    height: 95vh;
+}
+
+/*=================================right div for grid view========================  */
+  
+  .rightgrid{
+    /* border: 1px solid green; */
+
+      /* display: inline-block; */
+      width: 1053px;
+      /* height: 95vh; */
+  }   /*  end */
+/*=================================notesList div for list view========================  */
+  
+  .notesList{
+      overflow:auto;
+      overflow-x: hidden;
+      width: 800px;
+      display: block;
+      /* border: 1px solid green; */
+      height: 530px;
+      /* position: relative; */
+      /* top: 3px; */
+      scroll-behavior: smooth;
+  }
+/*=================================notesList div for grid view========================  */
+  
+    .notesGrid{  /*for grid*/    
+      display: grid !important;
+      grid-template-columns: repeat(4,261px);
+      grid-row-gap: 3px;
+      width: 101.3%;
+      /* margin-left: 250px; */
+      margin-top: 5px;
+      justify-items: center
+  
+  }
+  #hr1{
+      position: relative;
+      top: -3px;
+      width: 90%;
+  }
+  
+  #n1{
+      margin-top: -8px;
+  }
+  .full{
+     
+      width: 500px;
+      height: 70px;
+      margin-top: 10px;
+      box-shadow: 1px 2px 3px;
+  }
+  
+  
+     /* header in right   */
+  header {
+      text-align: center;
+      /* margin-top: 10px; */
+      background-color: #ffc947;
+      border-radius: 10px;
+      height: 31px;
+      line-height: 26px;
+  }     /*  end */
+                      /* starting */
+  /* first note div */
+  .note1 {
+      border: 1px solid black;
+      display: flex;
+      
+      margin: 0px 2px;
+      width: 99%;
+      border-radius: 7px;
+      margin-top: 10px;
+      height: 60px;
+  }     /*  end */
+  /* .sidetext{
+    min-width: 728px;
+  } */
+  .sidetext .title{
+    
+        font-size: 17px;    margin-top: 6px;
+        padding: 7px 8px; 
+        /* color: #ffffffc7; */
+        color: #202124;
+        font-weight: 600;
+    
+  }
+  .sidetext .notesm{
+    margin-top: 4px;
+    padding: 6px 15px;
+    margin-left: 9px;
+    line-height: 11px;
+    overflow: auto;
+    height: 192px;
+         /* color: #fffbfbbf; */
+    
+  }
+  hr{
+        width: 25%;
+        margin-left: 16px;
+        border: 1px solid #545252f5;
+        border-bottom: none;
+    
+  }
+  .sideicon{
+    display: flex;
+    justify-content: center;
+  }
+    /* task 1 input in right div  ++====  main heading  */
+  #t1 {
+      margin-left: 8px;
+      margin-top: 2px;
+      border-radius: 7px;
+      border: white;
+      background-color: transparent;
+  }    /*  end */
+  
+    /* notes in right div in notes 1 */
+  
+  #des {
+      display: block;
+      margin-left: 8px;
+      margin-top: 6px;  /*15*/
+      border-radius: 7px;
+      width: 90%;
+      border: white;
+      background-color: transparent;
+  }   /*  end */
+  
+  ::placeholder {     
+      color: black;
+      opacity: 0.8;
+  }      /*  end */
+  
+  
+   /* for secong task 2 heading  */
+  #t2 {
+      margin-left: 10px;
+      margin-top: 2px;
+      border-radius: 7px;
+      border: white;
+      background-color: transparent;
+  }    /*  end */
+  
+  /* descri of Task 2  */
+  #des1 {
+      display: block;
+      margin-left: 10px;
+      margin-top: 15px;
+      border-radius: 7px;
+      width: 90%;
+      border: white;
+      background-color: transparent;
+  }     /*  end */
+  
+  /* button for settigns  */
+  #b1{    
+      outline: none;
+      font-size: 23px;
+      width: 27px;
+      border: none;
+      background-color: white;
+      cursor: pointer;
+      background-color: transparent;
+  }     /* end */
+  
+  /* for some css to settings icon */
+  .fa-cog {
+      font-size: 23px;
+      color: black;
+  }    /*  end */
+  
+  .btnc{                  /*btnc remove class*/
+      border: none;
+      background-color: rgb(27, 54, 211);
+      width: 27px;
+      border-radius: 24px;
+      height: 25px;
+      margin-left: 17px;
+      margin-top: 15px;
+  }
+  /* .remove{                        
+      border: none;
+      background-color: rgb(27, 54, 211);
+      width: 27px;
+      border-radius: 24px;
+      height: 25px;
+      margin-left: 82px;
+      /* margin-l: 82px; 
+  } */
+  .fa-check{
+      color: black;
+  }
+  .check {
+      width: 28px;
+      height: 27px;
+      border-radius: 10px;
+      border: white;
+      /* background: #000; */
+      color: white;
+      position: relative;
+      top: 3px;
+      left: -6px;
+      cursor: pointer;
+  }
+  .tr {
+      width: 28px;
+      height: 27px;
+      border-radius: 10px;
+      border: white;
+      color: white;
+      position: relative;
+      top: 3px;
+      left: -6px;
+      cursor: pointer;
+  }
+  
+  
+  
+   /* div for setting bar */
+  .op {
+      border: 1px solid black;
+      margin: 0px 27px;
+      border-top: white;
+      border-radius: 5px;
+      height: 28px;
+      display: none;
+      width:435px;
+      animation:backInDown  0.8s 1;
+  }   /*  end */
+  /* 
+  @keyframes option {
+      
+      from{
+          width: 19px;
+          margin:0px  245px;
+          opacity: 0.2;
+          animation: backInDown;
+      }
+     
+  
+      
+  } */
+  
+  
+  /* new */
+  
+  /* second notes part  */
+  .note2 {
+      border: 1px solid black;
+      margin: 0px 2px;
+      width: 485px;
+      margin-top: 10px;
+      height: 60px;
+      border-radius: 7px;
+  }   /*  end */
+  
+  /* button for settigns  */
+  #b2{
+      position: relative;
+      top: -38px;
+      right: -454px;
+      font-size: 23px;
+      width: 27px;
+      border: none;
+      background-color: white;
+      cursor: pointer;
+      background-color: transparent;
+  }     /* end */
+  
+  /* first note div */
+  .noten {
+      border: 1px solid black;
+      margin: 0px 5px;
+      border-radius: 7px;
+      margin-top: 10px;
+      height: 60px;
+      display: flex;
+  }     /*  end */
+  
+    /* task 1 input in right div  ++====  main heading  */
+  .t1 {
+      margin-left: 8px;
+      margin-top: 2px;
+      border-radius: 7px;
+      border: white;
+      background-color: transparent;
+  }    /*  end */
+/*=================================notesList div for list view========================  */
+  
+  .notesnlist{
+        border: 1px solid black;
+        display: flex;
+        margin: 0px 2px;
+        width: 99%;
+        border-radius: 7px;
+        margin-top: 10px;
+        height: 60px;
+  }
+/*=================================notesList div for grid view========================  */
+
+  .notesngrid{   /*n1*/
+    border: 1px solid #797d79ab;
+    border: 1px solid black;
+    display: inline-block;
+    width: 234px;
+    height: 258px;
+    border-radius: 10px;
+}
+  
+.sidetextlist{
+    min-width: 730px;
+}
+.sidetextgrid{
+    min-width: 270px;
+}
+  #hr2 {
+      position: relative;
+      top: -7px;
+  }
+  
+  /* footer side */
+  
+  .footer {
+      margin: 0px 3px;
+      border-radius: 7px;
+      position: absolute;
+      top: 88.9%;  /*561  590*/
+      width:57% ;
+      right:  0px;
+      left: 281px;
+      /* border: 1px solid black; */
+      height: 64px;
+      /* border: 1px solid black; */
+    width: 50%;
+    margin: auto;
+    position: fixed;
+    bottom: 20px; left: 10px;
+  }    /*  end */
+  .footer input{
+    width: 530px;
+    height: 38px;
+    border-radius: 7px;
+    box-shadow: black;
+    box-sizing: border-box;
+    box-shadow: #000000c4 0px 0px 20px 0px;
+
+  }
+  button{
+    /* position: relative; */
+    width: 20px;
+    background: transparent;
+    border: none;
+    /* color: white; */
+    font-size: 15px; 
+    cursor: pointer;
+}
+  .footericon{
+    display: flex;
+    opacity: 0;
+    margin-top: 140px;
+  }
+  .ficon{
+    width: 20px;
+    /* border: 1px solid green; */
+  
+    margin: 1px 12px;
+}
+
+.listgrid:hover > .footericon {
+    opacity: 1;
+}
+
+  form{
+      height: 68px;
+      width: 77%; 
+  }
+  .out{
+      display: none;
+  }
+  /* new notes add */
+  #addText {
+      width: 77%;
+      height: 34px;
+      border-radius: 7px;
+      border: 1px solid #02010180;
+      outline: none;
+      position:relative;
+      top: 35px;
+      /* display: inline-block; */
+  }     /*  end */
+  
+  /*  div plus icon for new notes */
+  .plus1 {
+      display: inline;
+      height: 36px;
+      width: 37px;
+      position: absolute;
+      top: 34px;
+      left: -50px;
+  
+  }    /*  end */
+  
+  /*  div title for adding title */
+  .title{
+      width: 85%;
+      margin: 0px 16px;
+  }
+  
+  .between{
+    width: 65%;
+    margin-left: 20px;
+    border: 1px solid #545252f5;
+    border-bottom: none;
+    margin-top: 15px; display: none;
+  }
+
+  /* new notes add */
+  #addText2 {
+      width: 84%;
+      height: 34px;
+      border-radius: 7px;
+      border: 1px solid #02010180;
+      outline: none;
+      display:none;
+      margin: -3px 1px;
+  }     /*  end */
+  
+  
+  /*   plus button for adding notes */
+  .plus {   
+      border-radius: 12px;
+      border: none;  
+      color: white;
+      font-size: 24px;
+      width: 48px;
+      height: 33px;
+      position: relative;
+      left: 459px;
+      /* transform: rotate(10deg); */
+      pointer-events: none;
+      background-color: #fbb000b2;
+      opacity: 0.6;
+      top: 0px;
+  }
+  
+  .active{
+      cursor: pointer;
+      background-color: #fbaf00;
+      pointer-events: all;  
+      opacity: 1;
+  }
+  /* .done{
+     
+      position: relative;
+      top: -61px;
+      left: 900px;
+      width: 5vw;
+      height: 4vh;
+      text-align: center;
+      background-color: rgb(6 218 6);
+      color: black;
+      padding-top: 6px;
+      transition-duration: 2s;
+      animation: done 2s 1;
+      
+  } */
+  
+  .time{
+      position: relative;
+      /* border: 2px solid red; */
+      top: -20px;
+      left: 180px;
+  }
+  
+  
+  @keyframes done {
+      from{
+          position: relative;
+          top: -61px;
+          left: 900px;
+          width: 5vw;
+          height: 4vh;
+          text-align: center;
+          background-color: rgb(6 218 6);
+          color: black;
+          padding-top: 6px;
+          display: inline;
+      }
+      to{
+          background-color: white;
+          color: white;
+  
+      }
+  }
+  /* .rotate{
+        animation: rotate 2s 1;
+        animation: rotate 2s 1;
+      left: 466px;
+      border: 2px solid red;
+      position: relative;
+      top: 3px;
+  } */
+  @keyframes rotate {
+          from{
+              transform: rotate(10deg);
+          }
+          to {
+              transform: rotate(70deg);
+          }
+  }
+  
+  /* button for settigns  */
+  .b3{
+      font-size: 23px;
+      width: 27px;
+      border: none;
+      background-color: white;
+      cursor: pointer;
+      background-color: transparent;
+      
+  }     /* end */
+  .btn{
+      border: 1px solid white;
+      border-radius: 10px;
+      width: 25px;
+      height: 25px;
+  }
+  .red{
+      background-color: red;
+  }
+  .green{
+      background-color: green;
+  }
+  .yellow{
+      background-color: yellow;
+  }
+  .gr{
+      background-color: cadetblue;
+      color: darkblue;
+      position: relative;
+      left: 85px;
+      top: 6px;
+      border-radius: 10px;
+      border: none;
+      width: 25px;
+      height: 28px;
+      cursor: pointer;
+  }
+  .colors{
+      border: 2px solid red;
+      position: relative;
+      top: 10px;
+      left: 10px;
+      width: 100px;
+      height: 50px;
+      border: 2px solid red;
+      position: relative;
+      top: -54px;
+      left: 232px;
+      width: 143px;
+      height: 38px;
+      border-radius: 10px;
+      background: beige;
+      display: none;
+  }
+  #b12{
+      margin-left: 7px;
+  }
+  @media (max-width:350px) {
+      .plus1{
+          top: 35px;
+      }
+      
+      .footer{
+          top: 87%;
+      }
+      #addText2{
+          top: -2px;
+      }
+      #addText{
+          top: 32px;
+          width: 86%;
+      }
+  }
+  @media (max-width:425px) {
+      .notes{
+          border: none;
+      }
+      .left{
+          display: none;
+      }
+      .right{
+          width: 355px;
+          margin-left: 0px;
+          height: 104vh;
+      }
+      .btnc{
+          margin-left: 94px;
+      }
+      #b1{
+          right: -304px;
+          font-size: 28px;
+      }
+      #b2{
+          right: -304px;
+          font-size: 28px;
+      }
+      #b{
+          right: -304px;
+          font-size: 28px;
+      }
+      .footer{
+          top: 92%;
+      }
+      #addText{
+          width: 89%;
+          top: 9px; display: none;
+      }
+      #addText2{
+          position: relative;
+          top: -28px;
+      }
+      .plusm{
+          top: -60px;
+      }
+      .op{
+          width: 290px;
+      }
+      .plus1{
+          position: absolute;
+          top: 9px;
+          left: 320px; display: none;
+      }
+      #plus{
+          position:initial;
+      }
+      .notesList{
+          height: 88%;
+      }
+      #hr2{
+          top: -13px;
+      }
+      /* .search {
+          display: none;
+      } */
+      .b3{
+         right: -305px; 
+         font-size: 28px;
+      }
+      
+  }
+  
+  
+  
+  
+  /* notes in right div in notes 1 */
+  .des {
+      display: block;
+      margin-left: 8px;
+      margin-top: 15px;
+      border-radius: 7px;
+      width: 90%;
+      border: white;
+      background-color: transparent;
+  }   /*  end */
+  
+  ::placeholder {     
+      color: black;
+      opacity: 0.8;
+  }      /*  end */
+  
+  
+  /* for some css to settings icon */
+  .fa-cog {
+      font-size: 23px;
+      color: black;
+  }    /*  end */
+  
+  .noten{
+      margin-top: 2px;
+  }
+  
+  .darkmode{
+      background: #000;
+      color: white;
+      /* filter: invert(100%); */
+  }
+  .notesm{
+      display: inline-block;
+      margin: -4px; /*5*/
+      margin-left: 16px;
+      width: fit-content;
+      height: fit-content;
+      padding: 11px 10px 1px 3px;
+  }
+  .title{
+      margin: 5px;
+      margin-left: 16px;
+      font-weight: 600; padding: 2px;
+  }
+  .bar {
+      /* background-color: yellow; */
+      border: 1px solid black;
+      margin: 0px 27px;
+      border-top: white;
+      border-radius: 5px;
+      background-color: blanchedalmond;
+      height: 147px;
+      display: none;
+      width:435px;
+      animation:backInDown  0.8s 1;
+      z-index: 71;
+      position: relative;
+  }
+  .ser {
+      color: yellow;
+  }
+  
+  .footer-icon{
+      display:none;
+      background-color: darksalmon;
+      width: 100%;  
+      height: 50px; border-radius: 12px;  
+  }
+  
+  #img1 {
+      position: relative;
+      top: 8px;
+      left: 29px;
+      background-color: transparent;
+      border: none; cursor: pointer;
+  }
+  .btn :active + .lasticon{
+      color: red;
+  }
+  #img2 :active{
+      top: 4px;
+  }
+  #img3 :active{
+      top: 4px;
+  }
+  #img2{
+      position: relative;
+      top: 2px;
+      left: 133px;   background-color: transparent;
+      border: none; cursor: pointer;
+  }
+  #img3{
+      position: relative;
+      top: 7px;
+      left: 246px;  cursor: pointer;
+  }
+  .iconlast  {
+      position: relative;
+      top: 24px;
+      left: -51px;
+      font-size: 14px; color: #000000b3;
+  }
+  .activebtn{
+      color: white;
+  }
+  #lasthr{
+      width: 9%;
+      position: relative;
+      top: -17px;
+      left: -60px;
+      transform: rotate(90deg);
+      border: 1px solid black;
+      border-top: none;
+  }
+  #lasthr2{
+      width: 9%;
+      position: relative;
+      top: -25px;
+      left: 73px;
+      transform: rotate(90deg);
+      border: 1px solid black;
+      border-top: none;
+  }
+  .lastfa{
+      left: 13px;
+  }
+  .lastimp{
+      left: 88px;
+  }
+  /* for vertical line  */
+  .vl {
+      border-left: 2px solid hsl(0deg 0% 3%);
+      height: 39px;
+      position: relative;
+      left: 18%;
+      margin-left: -3px;
+      top: -38px;
+    }
+  
+  svg{
+      margin-left: 16px;
+      margin-top: 5px;
+      cursor: pointer;
+  }  
+  .outline{
+      outline: none;
+  }
+  
+  .option {
+    border: 1px solid red;
+    width: 728px;
+    height: 147px;
+    margin-left: 50px;
+    border-radius: 10px;
+    display: none;
+    grid-template-columns: repeat(4, 190px);
+    grid-template-rows: repeat(2, 70px);
+}
+.optionbox {
+    width: 50px;
+    margin-left: 10px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.sec {
+    display: flex;
+ }
+ .fbtn{
+     margin-left: 10px;
+     min-width: 50px;
+     display: grid;
+     justify-items: center;
+     align-items: center;
+ }
+ .color{
+    display: grid;
+    margin-left: 140px;
+    grid-template-columns: repeat(3,192px);
+    grid-template-rows: repeat(2,50px);
+
+}
+  .btn {
+      border-radius: 9px; border: none; width: 27px; height: 26px;
+      background-color: cornflowerblue;
+      cursor: pointer;
+     
+      
+  }
+  
+  
+  .ph{
+      color: red;
+  }
+  .text {
+      transform: rotate(90deg);
+      color: rosybrown;
+      font-size: 14px;
+      position: relative;
+      top: 130px;
+      left: 206px;
+  }
+  
+  .font {
+      font-size: 10px;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      margin: 10px;
+      justify-self: center;
+  }
+  
+ 
+  
+  .red {
+      /* margin-left: 12px; */
+      background-color: red;
+  }
+  
+  .yellow {
+      /* margin-left: 12px; */
+      background-color: yellow;
+  
+  }
+  .b{
+      background-color: blue;
+  }
+  .g{
+      background-color: green;
+  }
+  .li{
+      background-color: lightgreen;
+  }
+  .sr{
+      background-color: silver;
+  }
+  .last {
+      margin-left: -5px;
+  }
+  .timer{
+      position: relative;
+      top: 60px;
+      left: 435px;
+      border: 1px solid red;
+      height: 30px; width: 23%; display: none;
+      margin: 17px 10px;
+      height: 142px;
+      z-index: 5;
+      background: antiquewhite;
+      border-radius: 10px;
+  }
+  #Date{
+      margin: 22px;
+  }
+  #Set{
+      margin: 27px;
+  }
+  #time{
+      position: relative;
+      top: -540px;
+      left: 811px;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 109px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropbtn{
+        background: transparent;
+        color: white;
+        border: white; cursor: pointer;
+    }
+    .dropbtn:hover{
+        color: red;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 6px 10px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover{
+        color: red;
+    }
+    .show {display: block;
+      top: 162px;
+      border-radius: 10px;
+      /* opacity: 2.9; */
+      height: 137px;
+  }
+  #fnotes{
+      display: none;
+  }
+  /* .f1, .f2 ,.f3{
+      display: inline-block;
+      border: 1px solid red;
+  } */
+  .mobile{
+      display: none;
+  }
+  @media (max-width:425px) {  
+      .box{
+          position: relative;
+      }
+      #sea{
+          display: none;
+      }
+      #searchTxt{
+          display: none;
+      }
+      .nV{
+          width: 357px;
+      z-index: 1;
+      position: relative;
+      top: -32px;
+      display: none;
+      opacity: 0.9; 
+      }
+      .container{
+          position: relative;
+          top: -5px;
+          left: 10px;
+      }
+      .note1{
+          width: 68.6%;
+      }
+      .notesn{
+          width: 84.1%;
+      }
+      .option{
+          width: 330px;
+          margin-left: 15px;
+      }
+      .che , .share {
+          margin-left: 17px;
+      }
+      .remove{
+          margin-left: 50px;
+      }
+      .pin{
+          margin-left: 57px;
+      }
+      .time1{
+          margin-left: 60px;
+      }
+      #hr22{
+          margin-left: 51px;
+      }
+      .color{
+          margin-left: 87px;
+          grid-template-columns: repeat(3,97px);
+      }
+      #ch {
+          left: 13px;
+      }
+      #re {
+          left: 57px;
+      }
+      #pi {
+          left: 110px;
+      }
+      #ti {
+          left: 170px;
+      }
+      #sh {
+          top: -74px;
+          left: -117px;
+      }
+      .text{
+          top: 80px;
+      left: 156px;
+      }
+      .timer{
+          display: none;
+      position: relative;
+      top: -135px;
+      left: 109px;
+      border: 2px solid red;
+      height: 83px;
+      width: 57%;
+      }
+      .pc{
+          display: none;
+      }
+      .mobile{
+          display: inline-block;
+      }
+      .footer-icon{
+          display: block; width: 100vw;
+          margin-top: 495px;
+      }
+      #h2{
+          left: 105px;
+      }
+      .dropdown-content{
+          top: -59px;
+      left: 255px; width: 130px;
+      }
+      .dropdown-content a{
+          padding: 5px 8px;
+      }
+      .out{
+          top: 446px; position: fixed; z-index: 5;
+          width: 70px;
+          height: 29px;
+          left: 285px;
+          border: none;
+          box-shadow: #00000082 1px 5px 7px 0px;
+          background-color: #f1efefcc;
+          background-color: white;
+          padding:4px;
+          border-radius: 15px;
+          transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+      }
+      .small{
+          top: 452px; position: fixed; z-index: 5;
+          width: 25px;
+          height: 25px;
+          left: 350px;
+          border: none;
+          box-shadow: #00000082 1px 5px 7px 0px;
+          background-color: #f1efefcc;
+          padding:4px;
+          border-radius: 15px;
+          transition: .8s;
+      }
+      
+      .btnplus{
+          border-radius: 14px;
+          border: none;  
+          color: white;
+          font-size: 22px;
+          width: 26px;
+          height: 27px;
+          background-color: #fbb000f2;
+      }
+      .Add{
+          color: #fb9905; 
+          margin: 1px;
+          position: relative;
+          top: -1px;
+          display: inline;
+      }
+  }
+  
