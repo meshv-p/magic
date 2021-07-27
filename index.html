@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="Save your Notes" value="This is a site,where you can put Your notesList">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="|">
+  <title>notes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+</head>
+
+<body>
+
+
+  <nav>
+    <div class="cards">
+      <div class="cards__item card1" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div class="cards__item card2 ">Notes</div>
+
+      <div class="search">
+        <!--   for searching button-->
+        <input type="text" placeholder="Search" id="searchTxt">
+        <i class="fa fa-search" id="sea"></i>
+      </div>
+      <div class="icon">
+        <i>
+          <i onclick="listchange()" class="fas fa-th" id="list" aria-label="grid view" >
+          </i> </i>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- main part  -->
+  <section>
+    <div class="main">
+      <!-- first one -->
+      <div class="side">
+        <div class="nV" id="nv">
+          <div class="box" id="box"><a href="#">Home</a></div>
+          <div class="box" id="box2"><a href="#">Dark Mode</a></div>
+          <div class="box" id="box3">
+            <button onclick="myFunctionbar()" class="dropbtn">Contact</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="mailto:patelmeshv123@gmail.com?subject=Hey&body=hi">Send a Mail</a>
+              <a href="tel:8866643262">Contact Us</a>
+              <a href="sms:8866643262?body=hey">Send a Message</a>
+            </div>
+          </div>
+          <div class="box" id="box4"><a href="https://meshv-p.github.io/News/about.html">About</a></div>
+        </div>
+      </div>
+    <div class="right">
+        <!-- second one part -->
+        <header>
+          Today's Task
+          <hr id="hr1">
+        </header>
+        <div class="notesList" id="notes"> 
+        <!-- Notes1 -->
+        
+          <div  class="notesn">
+            <div class="note1" id="p1">
+              <div class="sidetext">
+                <input type="text" placeholder="Task 1" id="t1">
+                <input type="text" id="des" placeholder="Description">
+              </div>
+              <div class="sideicon">
+                <button id="b1" class="outline" title="setting" onclick="opt()"> <i class="fa fa-cog"></i></button>
+              </div>
+            </div>
+            <!-- option bar -->
+            <div class="option" id="opt">
+              <div class="optionbox">
+                <button class="btn che" title="If Your notes is done You can tick cross." onclick="check()"><i
+                    class="fa fa-check "></i></button>
+                <span class="font ">Checked</span>
+                <!-- checked -->
+              </div>
+              <div class="optionbox"> <button class="btn remove" title="If it is done then remove Notes."
+                  onclick="remove()"><i class="fa fa-trash-alt"></i></button>
+                <span class="font ">Remove</span>
+                <!-- remove -->
+              </div>
+              <div class="optionbox"> <button class="btn pin" title="Favorite notes so You can see in favorite section."
+                  id="me" onclick="star(this.id)"><i class="fa fa-star"></i></button>
+                <span class="font ">Pinned</span>
+                <!-- pinned -->
+              </div>
+              <div class="optionbox"><button class="btn time1" title="Put timer so You dont forget to do that."
+                  onclick="timer()"><i class="fa fa-clock"></i></button>
+                <span class="font ">Timer</span>
+                <!--time-->
+              </div>
+
+              <div class="sec">
+                <div class="fbtn">
+                  <button class="btn share" onclick="share()"><i class="fa fa-share"></i></button>
+                  <span class="font ">Share</span>
+                </div>
+
+                <div class="color"> <button class="btn red" title="Red" onclick="red()"></button> <!-- red -->
+                  <button class="btn b" title="Blue" onclick="blue()"></button> <!-- blue -->
+                  <button class="btn last g" title="Green" onclick="green()"></button>
+                  <!--green  -->
+                  <button class="btn yellow" title="Yellow" onclick="yellow()"></button>
+                  <button class="btn li" title="LightGreen" onclick="lightgreen()"></button>
+                  <button class="btn last sr" title="Silver" onclick="silver()"></button>
+                </div>
+              </div>
+            </div>          
+      </div>
+         </div>
+    </div>
+    </div>
+  </section>
+  <div class="footer" style="right: 0px;">
+    <form> <input type="text" id="addText2" required class="title" min="2" placeholder="Add new Title">
+      <input type="text" id="addText" onclick="AddTitle()" placeholder="Add new Task" required>
+    </form>
+    <div class="plus1" id="pl">
+      <button type="submit" title="add notes" id="plus" class="plus ">+</button>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
